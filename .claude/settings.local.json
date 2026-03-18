@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p public)",
+      "Bash(mv src/index.html public/index.html)",
+      "Bash(mkdir -p src/styles)",
+      "Bash(mv src/style.css src/styles/style.css)",
+      "Bash(mkdir -p router views components assets utils services)",
+      "Bash(touch router/.gitkeep views/.gitkeep components/.gitkeep assets/.gitkeep utils/.gitkeep services/.gitkeep)",
+      "Bash(mkdir -p img video hdr glbs)",
+      "Bash(touch img/.gitkeep video/.gitkeep hdr/.gitkeep glbs/.gitkeep)"
+    ]
+  }
+}
