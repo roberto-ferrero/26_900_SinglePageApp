@@ -1,7 +1,7 @@
 import './SampleProject.css'
 import Project from '../../core/Project'
-import IndexPage from '../../pages/IndexPage'
-import ContactPage from '../../pages/ContactPage'
+import IndexPage from './pages/IndexPage'
+import ContactPage from './pages/ContactPage'
 
 class SampleProject extends Project {
     constructor() {

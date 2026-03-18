@@ -1,7 +1,7 @@
-import Page from '../core/Page'
-import Header from '../components/Header/Header'
-import Contact from '../components/Contact/Contact'
-import Footer from '../components/Footer/Footer'
+import Page from '@src/core/Page'
+import Header from '@src/components/Header/Header'
+import Contact from '@src/components/Contact/Contact'
+import Footer from '@src/components/Footer/Footer'
 
 class ContactPage extends Page {
     constructor() {

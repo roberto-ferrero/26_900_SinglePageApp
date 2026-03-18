@@ -27,6 +27,13 @@ module.exports = {
         path: path.resolve(__dirname, '../dist')
     },
     devtool: 'source-map',
+    resolve:
+    {
+        alias:
+        {
+            '@src': path.resolve(__dirname, '../src')
+        }
+    },
     plugins:
     [
         new CopyWebpackPlugin({

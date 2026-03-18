@@ -1,8 +1,8 @@
-import Page from '../core/Page'
-import Header from '../components/Header/Header'
-import Hero from '../components/Hero/Hero'
-import SimpleCards from '../components/SimpleCards/SimpleCards'
-import Footer from '../components/Footer/Footer'
+import Page from '@src/core/Page'
+import Header from '@src/components/Header/Header'
+import Hero from '@src/components/Hero/Hero'
+import SimpleCards from '@src/components/SimpleCards/SimpleCards'
+import Footer from '@src/components/Footer/Footer'
 
 class IndexPage extends Page {
     constructor() {

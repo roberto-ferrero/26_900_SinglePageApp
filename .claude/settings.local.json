@@ -8,7 +8,8 @@
       "Bash(mkdir -p router views components assets utils services)",
       "Bash(touch router/.gitkeep views/.gitkeep components/.gitkeep assets/.gitkeep utils/.gitkeep services/.gitkeep)",
       "Bash(mkdir -p img video hdr glbs)",
-      "Bash(touch img/.gitkeep video/.gitkeep hdr/.gitkeep glbs/.gitkeep)"
+      "Bash(touch img/.gitkeep video/.gitkeep hdr/.gitkeep glbs/.gitkeep)",
+      "Bash(npm run:*)"
     ]
   }
 }
