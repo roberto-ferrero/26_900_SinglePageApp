@@ -1,0 +1,13 @@
+:root {
+    --color-bg:       #f4f4f4;
+    --color-bg-alt:   #eaeaea;
+    --color-text:     #111111;
+    --color-text-muted: #555555;
+    --color-accent:   #e63946;
+    --font-primary:   'Georgia', serif;
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: var(--font-primary);
+}

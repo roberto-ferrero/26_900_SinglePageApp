@@ -1,0 +1,11 @@
+.footer {
+    padding: 2rem;
+    background: #111;
+    text-align: center;
+}
+
+.footer__copy {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+}
