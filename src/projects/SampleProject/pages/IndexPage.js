@@ -1,6 +1,6 @@
 import Page from '@src/core/Page'
 import Header from '@src/components/Header/Header'
-import Hero from '@src/components/Hero/Hero'
+import ImprovedHero from '@src/components/ImprovedHero/ImprovedHero'
 import SimpleCards from '@src/components/SimpleCards/SimpleCards'
 import Footer from '@src/components/Footer/Footer'
 
@@ -8,7 +8,7 @@ class IndexPage extends Page {
     constructor() {
         super([
             new Header(),
-            new Hero(),
+            new ImprovedHero(),
             new SimpleCards(),
             new Footer()
         ])

@@ -9,7 +9,8 @@
       "Bash(touch router/.gitkeep views/.gitkeep components/.gitkeep assets/.gitkeep utils/.gitkeep services/.gitkeep)",
       "Bash(mkdir -p img video hdr glbs)",
       "Bash(touch img/.gitkeep video/.gitkeep hdr/.gitkeep glbs/.gitkeep)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(xargs wc:*)"
     ]
   }
 }

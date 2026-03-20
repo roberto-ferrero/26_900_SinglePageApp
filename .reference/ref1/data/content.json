@@ -1,0 +1,258 @@
+{
+  "_comment": "CMS placeholder data — in production this would be fetched from your headless CMS API (e.g. Contentful, Strapi, Sanity, Directus). Each key maps to a [data-cms] attribute in the HTML.",
+  "_apiBase": "/api/v1",
+
+  "site": {
+    "name": "Cinetika",
+    "tagline": "Un espacio dedicado al movimiento en el barrio",
+    "description": "Espacio de bienestar y movimiento en Móstoles. Pilates, Yoga Kundalini, Hipopresivos y mucho más en grupos reducidos y homogéneos.",
+    "address": "Calle Pintor Velázquez 16, Móstoles, Madrid",
+    "phone": "694 419 227",
+    "phoneRaw": "+34694419227",
+    "email": "sara@cinetika.es",
+    "locale": "es-ES",
+    "currency": "EUR"
+  },
+
+  "social": {
+    "instagram": "https://www.instagram.com/cinetikaespacio/",
+    "facebook": "https://www.facebook.com/espaciocinetika",
+    "youtube": "https://www.youtube.com/channel/UCFM8G4mo1ZNIW83LH-lFn7w",
+    "whatsapp": "https://wa.me/34694419227"
+  },
+
+  "navigation": [
+    { "id": "home",        "label": "Inicio",      "href": "../index.html" },
+    { "id": "actividades", "label": "Actividades", "href": "actividades.html" },
+    { "id": "horarios",    "label": "Horarios",    "href": "horarios.html" },
+    { "id": "terapias",    "label": "Terapias",    "href": "terapias.html" },
+    { "id": "galeria",     "label": "Galería",     "href": "galeria.html" },
+    { "id": "videos",      "label": "Vídeos",      "href": "videos.html" },
+    { "id": "tablon",      "label": "Tablón",      "href": "tablon.html" },
+    { "id": "contacto",    "label": "Contacto",    "href": "contacto.html" }
+  ],
+
+  "hero": {
+    "slides": [
+      {
+        "id": "slide-1",
+        "eyebrow": "Espacio de movimiento en Móstoles",
+        "title": "Muévete.<br>Siéntete.<br>Sé tú.",
+        "subtitle": "Un espacio dedicado al movimiento en el barrio. Pilates, Yoga Kundalini, Hipopresivos y más — en grupos reducidos y con atención personalizada.",
+        "cta_primary": { "label": "Ver actividades", "href": "pages/actividades.html" },
+        "cta_secondary": { "label": "Clase de prueba gratis", "href": "pages/contacto.html" },
+        "image": "https://placehold.co/1600x900/111111/d4006e?text=Cinetika+Studio"
+      },
+      {
+        "id": "slide-2",
+        "eyebrow": "Pilates con máquinas y suelo",
+        "title": "Tu cuerpo te lo agradecerá.",
+        "subtitle": "Reformer, Cadillac, silla Wunda y barrel. Mejora tu postura, fortalece tu core y gana flexibilidad con nuestras clases de Pilates Studio.",
+        "cta_primary": { "label": "Pilates Studio", "href": "pages/actividades.html#pilates" },
+        "cta_secondary": { "label": "Ver horarios", "href": "pages/horarios.html" },
+        "image": "https://placehold.co/1600x900/1a1a2e/ff4da6?text=Pilates+Studio"
+      },
+      {
+        "id": "slide-3",
+        "eyebrow": "Yoga Kundalini",
+        "title": "Energía. Presencia. Equilibrio.",
+        "subtitle": "El Yoga Kundalini combina posturas, respiración, meditación y mantra para despertar tu energía vital y alcanzar un estado de calma profunda.",
+        "cta_primary": { "label": "Kundalini Yoga", "href": "pages/actividades.html#yoga" },
+        "cta_secondary": { "label": "Contactar", "href": "pages/contacto.html" },
+        "image": "https://placehold.co/1600x900/0a0a1a/d4006e?text=Kundalini+Yoga"
+      }
+    ]
+  },
+
+  "services": [
+    {
+      "id": "pilates-maquinas",
+      "name": "Pilates Máquinas",
+      "category": "pilates",
+      "icon": "⚙️",
+      "short_description": "Reformer, Cadillac, Wunda Chair y Barrel para un entrenamiento integral y personalizado.",
+      "description": "El Pilates en máquinas permite un trabajo más profundo y variado que el suelo, con la resistencia de los muelles. Trabajamos la fuerza, la flexibilidad, la postura y la coordinación en grupos muy reducidos.",
+      "benefits": ["Mejora postural", "Fortalecimiento del core", "Flexibilidad y movilidad", "Rehabilitación y prevención"],
+      "level": "Todos los niveles",
+      "group_size": "Máx. 4 personas",
+      "duration": "55 min",
+      "image": "https://placehold.co/600x400/f0f0f0/d4006e?text=Pilates+Máquinas"
+    },
+    {
+      "id": "pilates-suelo",
+      "name": "Pilates Suelo",
+      "category": "pilates",
+      "icon": "🧘",
+      "short_description": "La base del método Pilates. Trabaja conciencia corporal, control y respiración sobre la esterilla.",
+      "description": "El Pilates de suelo es la esencia del método. Ideal para iniciarse o como complemento a las máquinas, trabaja el control del movimiento, la respiración y la conciencia corporal.",
+      "benefits": ["Conciencia corporal", "Control del movimiento", "Tonificación", "Apto embarazo y posparto"],
+      "level": "Todos los niveles",
+      "group_size": "Máx. 6 personas",
+      "duration": "55 min",
+      "image": "https://placehold.co/600x400/fff0f5/d4006e?text=Pilates+Suelo"
+    },
+    {
+      "id": "hipopresivos",
+      "name": "Gimnasia Hipopresiva",
+      "category": "hipopresiva",
+      "icon": "🌬️",
+      "short_description": "Técnica postural y respiratoria que reduce la presión abdominal y fortalece el suelo pélvico.",
+      "description": "La gimnasia abdominal hipopresiva es un conjunto de técnicas posturales y respiratorias que reducen la presión intraabdominal. Especialmente indicada para disfunciones del suelo pélvico, hernias, diástasis y mejora del rendimiento deportivo.",
+      "benefits": ["Fortalece suelo pélvico", "Reduce diástasis abdominal", "Mejora postura", "Previene hernias"],
+      "level": "Todos los niveles",
+      "group_size": "Máx. 6 personas",
+      "duration": "55 min",
+      "image": "https://placehold.co/600x400/f0fff4/008060?text=Hipopresivos"
+    },
+    {
+      "id": "kundalini-yoga",
+      "name": "Kundalini Yoga",
+      "category": "yoga",
+      "icon": "✨",
+      "short_description": "Yoga dinámico que combina posturas, respiración, meditación y mantra para equilibrar cuerpo y mente.",
+      "description": "El Kundalini Yoga es una práctica completa que trabaja cuerpo, mente y espíritu. A través de kriyas (series de ejercicios), pranayama (respiración), meditación y mantra, se activa la energía vital.",
+      "benefits": ["Gestión del estrés", "Claridad mental", "Equilibrio emocional", "Energía y vitalidad"],
+      "level": "Todos los niveles",
+      "group_size": "Máx. 8 personas",
+      "duration": "75 min",
+      "image": "https://placehold.co/600x400/f5f0ff/5a00b8?text=Kundalini+Yoga"
+    },
+    {
+      "id": "risoterapia",
+      "name": "Risoterapia",
+      "category": "bienestar",
+      "icon": "😄",
+      "short_description": "Talleres de risa consciente para liberar tensiones, conectar con el grupo y disfrutar del presente.",
+      "description": "La risoterapia utiliza el poder de la risa como herramienta terapéutica. A través de ejercicios lúdicos y dinámicas de grupo, liberamos endorfinas, reducimos el estrés y mejoramos el bienestar general.",
+      "benefits": ["Reduce el estrés", "Fortalece el sistema inmune", "Mejora el estado de ánimo", "Conexión social"],
+      "level": "Todos los niveles",
+      "group_size": "Hasta 12 personas",
+      "duration": "90 min",
+      "image": "https://placehold.co/600x400/fffaf0/c06a00?text=Risoterapia"
+    },
+    {
+      "id": "mindfulness",
+      "name": "Mindfulness y Relajación",
+      "category": "bienestar",
+      "icon": "🌿",
+      "short_description": "Técnicas de atención plena, meditación, respiración y relajación profunda para el día a día.",
+      "description": "Sesiones de mindfulness, meditación guiada y técnicas de relajación profunda. Aprende a habitar el presente, gestionar el estrés y cultivar una mente más serena y enfocada.",
+      "benefits": ["Reduce ansiedad", "Mejora la concentración", "Sueño reparador", "Equilibrio emocional"],
+      "level": "Todos los niveles",
+      "group_size": "Máx. 8 personas",
+      "duration": "60 min",
+      "image": "https://placehold.co/600x400/f0f8ff/2060a0?text=Mindfulness"
+    }
+  ],
+
+  "instructors": [
+    {
+      "id": "sara",
+      "name": "Sara",
+      "role": "Directora y fundadora · Pilates & Hipopresivos",
+      "bio": "Instructora certificada de Pilates y Gimnasia Hipopresiva con más de 10 años de experiencia. Fundó Cinetika con la visión de crear un espacio cercano y de calidad en el barrio.",
+      "specialties": ["Pilates Studio", "Pilates Suelo", "Hipopresivos", "Posparto"],
+      "avatar": "https://placehold.co/300x300/f8f8f8/d4006e?text=Sara"
+    },
+    {
+      "id": "instructor-2",
+      "name": "Instructora Yoga",
+      "role": "Profesora de Kundalini Yoga",
+      "bio": "Maestra certificada de Kundalini Yoga por KRI (Kundalini Research Institute). Su práctica integra las tradiciones clásicas con las necesidades del mundo contemporáneo.",
+      "specialties": ["Kundalini Yoga", "Meditación", "Pranayama"],
+      "avatar": "https://placehold.co/300x300/f5f0ff/5a00b8?text=Yoga"
+    },
+    {
+      "id": "instructor-3",
+      "name": "Especialista Bienestar",
+      "role": "Terapeuta · Mindfulness & Risoterapia",
+      "bio": "Terapeuta y facilitadora con formación en Mindfulness MBSR, Risoterapia y técnicas de relajación. Acompaña a sus alumnos hacia un mayor bienestar emocional.",
+      "specialties": ["Mindfulness", "Risoterapia", "Relajación", "Respiración"],
+      "avatar": "https://placehold.co/300x300/fffaf0/c06a00?text=Bienestar"
+    }
+  ],
+
+  "schedule": {
+    "_comment": "See schedule.json for the full weekly timetable",
+    "note": "Horario sujeto a cambios. Consulta el tablón o contáctanos para confirmar.",
+    "trialClass": "Ofrecemos clases de prueba sin compromiso. ¡Contáctanos!"
+  },
+
+  "announcements": [
+    {
+      "id": "ann-1",
+      "title": "Nueva clase de Pilates Máquinas — Martes y Jueves mañana",
+      "body": "Abrimos un nuevo turno de Pilates en Reformer para los martes y jueves a las 9:00h. Plazas muy limitadas — grupos de máximo 4 personas.",
+      "date": "2026-03-10",
+      "day": "10",
+      "month": "Mar",
+      "badge": "Nuevo",
+      "type": "success",
+      "link": { "label": "Reservar plaza", "href": "contacto.html" }
+    },
+    {
+      "id": "ann-2",
+      "title": "Taller de Risoterapia — Sábado 28 de marzo",
+      "body": "Sesión especial de Risoterapia este sábado a las 11:00h. Abierto a tod@s, no hace falta experiencia previa. Precio especial taller: 15€.",
+      "date": "2026-03-05",
+      "day": "05",
+      "month": "Mar",
+      "badge": "Próximo evento",
+      "type": "info",
+      "link": { "label": "Más info", "href": "contacto.html" }
+    },
+    {
+      "id": "ann-3",
+      "title": "Horarios de Semana Santa",
+      "body": "Durante Semana Santa (4–12 de abril) habrá modificaciones en los horarios. Consultad el tablón actualizado o escribidnos por WhatsApp.",
+      "date": "2026-02-28",
+      "day": "28",
+      "month": "Feb",
+      "badge": "Aviso",
+      "type": "urgent",
+      "link": null
+    },
+    {
+      "id": "ann-4",
+      "title": "Incorporación de Yoga Kundalini en horario de tarde",
+      "body": "A partir de abril añadimos una sesión de Kundalini Yoga los miércoles a las 19:30h. Una práctica completa de cuerpo, mente y espíritu.",
+      "date": "2026-02-20",
+      "day": "20",
+      "month": "Feb",
+      "badge": "Próximamente",
+      "type": "default",
+      "link": { "label": "Ver horarios", "href": "horarios.html" }
+    }
+  ],
+
+  "stats": [
+    { "number": "10+", "label": "Años de experiencia" },
+    { "number": "6",   "label": "Disciplinas" },
+    { "number": "4",   "label": "Máx. alumnos/clase" },
+    { "number": "∞",   "label": "Bienestar garantizado" }
+  ],
+
+  "testimonials": [
+    {
+      "id": "test-1",
+      "name": "María G.",
+      "text": "Llevo 2 años en Cinetika y ha cambiado mi vida. Los grupos pequeños hacen que la atención sea increíble. Sara es una profesional maravillosa.",
+      "rating": 5,
+      "activity": "Pilates Máquinas"
+    },
+    {
+      "id": "test-2",
+      "name": "Carmen R.",
+      "text": "Los hipopresivos me han ayudado muchísimo después del parto. Un espacio muy cercano y profesional, parece que toda la vida han estado ahí.",
+      "rating": 5,
+      "activity": "Hipopresivos"
+    },
+    {
+      "id": "test-3",
+      "name": "Lucía F.",
+      "text": "El Yoga Kundalini del miércoles es mi momento favorito de la semana. Salgo renovada. El ambiente del estudio es acogedor y muy tranquilo.",
+      "rating": 5,
+      "activity": "Kundalini Yoga"
+    }
+  ]
+}

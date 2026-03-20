@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Terapias y bienestar en Cinetika: Risoterapia, Mindfulness, Estiramientos, Relajación y Técnicas de Respiración en Móstoles." />
+  <title>Terapias — Cinetika</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <a href="../index.html" class="nav-brand" aria-label="Cinetika — Inicio">
+        <div class="nav-brand__logo" aria-hidden="true">Ck</div>
+        <span class="nav-brand__name">Cine<span>tika</span></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li class="nav-links__item"><a href="../index.html" class="nav-links__link">Inicio</a></li>
+          <li class="nav-links__item"><a href="actividades.html" class="nav-links__link">Actividades</a></li>
+          <li class="nav-links__item"><a href="horarios.html" class="nav-links__link">Horarios</a></li>
+          <li class="nav-links__item"><a href="terapias.html" class="nav-links__link active" aria-current="page">Terapias</a></li>
+          <li class="nav-links__item"><a href="galeria.html" class="nav-links__link">Galería</a></li>
+          <li class="nav-links__item"><a href="videos.html" class="nav-links__link">Vídeos</a></li>
+          <li class="nav-links__item"><a href="tablon.html" class="nav-links__link">Tablón</a></li>
+          <li class="nav-links__item nav-cta"><a href="contacto.html" class="btn btn--primary btn--sm">Contactar</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="../index.html">Inicio</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span aria-current="page">Terapias</span>
+        </nav>
+        <span class="page-header__label">Bienestar integral</span>
+        <h1 class="page-header__title">Terapias y bienestar</h1>
+        <p class="page-header__subtitle">
+          Más allá del movimiento físico: herramientas para el equilibrio emocional,
+          la gestión del estrés y el bienestar profundo.
+        </p>
+      </div>
+    </div>
+
+    <!-- ==================================================================
+         INTRO SECTION
+         ================================================================== -->
+    <section class="section section--alt" aria-labelledby="terapias-intro-title">
+      <div class="container">
+        <div class="grid grid--2" style="align-items:center; gap: var(--space-16);">
+          <div>
+            <span class="section-label">Nuestro enfoque</span>
+            <h2 class="section-title" id="terapias-intro-title">
+              El bienestar va más allá del cuerpo
+            </h2>
+            <p style="font-size: var(--text-md); color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-5);">
+              En Cinetika creemos en un enfoque holístico del bienestar. Además del trabajo
+              físico con Pilates e Hipopresivos, ofrecemos un programa de terapias y
+              técnicas que cuidan la mente, las emociones y el sistema nervioso.
+            </p>
+            <p style="font-size: var(--text-base); color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-8);">
+              Todas nuestras sesiones de bienestar se realizan en grupos reducidos,
+              en un entorno de confianza y respeto, guiadas por profesionales con
+              formación específica en cada técnica.
+            </p>
+            <a href="contacto.html" class="btn btn--primary btn--lg">Consultar disponibilidad</a>
+          </div>
+          <div>
+            <img
+              src="https://placehold.co/700x500/f5f5f5/d4006e?text=Bienestar+Cinetika"
+              alt="Sesión de bienestar en Cinetika"
+              loading="lazy"
+              width="700" height="500"
+              style="border-radius: var(--radius-xl); width:100%; box-shadow: var(--shadow-lg);"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         THERAPY CARDS — alternating layout
+         CMS: fetch from /api/therapies
+         ================================================================== -->
+    <section class="section" aria-labelledby="therapies-list-title">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-label">Lo que ofrecemos</span>
+          <h2 class="section-title" id="therapies-list-title">Nuestras terapias y técnicas</h2>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap: var(--space-8);" data-cms="therapies">
+
+          <!-- Risoterapia -->
+          <article class="therapy-card" id="risoterapia" data-cms-id="risoterapia">
+            <img
+              src="https://placehold.co/700x460/fffaf0/c06a00?text=Risoterapia"
+              alt="Taller de Risoterapia en Cinetika"
+              class="therapy-card__image"
+              loading="lazy"
+              width="700" height="460"
+            />
+            <div class="therapy-card__body">
+              <p class="therapy-card__tag">Bienestar · Grupal</p>
+              <h3 class="therapy-card__title">Risoterapia</h3>
+              <p class="therapy-card__text">
+                La Risoterapia utiliza el poder de la risa como herramienta terapéutica.
+                A través de ejercicios lúdicos, juegos de rol, dinámicas grupales y
+                técnicas de yoga de la risa, liberamos endorfinas, reducimos cortisol
+                y mejoramos el bienestar general de forma natural y divertida.
+              </p>
+              <ul class="therapy-card__benefits" aria-label="Beneficios">
+                <li class="therapy-benefit">Reduce el estrés y la ansiedad</li>
+                <li class="therapy-benefit">Fortalece el sistema inmune</li>
+                <li class="therapy-benefit">Mejora las relaciones sociales</li>
+                <li class="therapy-benefit">Libera tensiones acumuladas</li>
+              </ul>
+              <div style="display:flex; gap: var(--space-3); flex-wrap:wrap; margin-bottom: var(--space-5);">
+                <span class="badge badge--light">Talleres puntuales</span>
+                <span class="badge badge--light">Hasta 12 personas</span>
+                <span class="badge badge--light">90 min</span>
+              </div>
+              <a href="contacto.html" class="btn btn--primary">Consultar fechas</a>
+            </div>
+          </article>
+
+          <!-- Mindfulness -->
+          <article class="therapy-card" id="mindfulness" data-cms-id="mindfulness">
+            <img
+              src="https://placehold.co/700x460/f0f8ff/2060a0?text=Mindfulness"
+              alt="Sesión de Mindfulness en Cinetika"
+              class="therapy-card__image"
+              loading="lazy"
+              width="700" height="460"
+            />
+            <div class="therapy-card__body">
+              <p class="therapy-card__tag">Bienestar · Regular</p>
+              <h3 class="therapy-card__title">Mindfulness y Meditación</h3>
+              <p class="therapy-card__text">
+                El Mindfulness o atención plena es la capacidad de estar completamente
+                presentes en el momento. A través de la meditación guiada, escáner
+                corporal, movimiento consciente y ejercicios de atención, aprendemos
+                a relacionarnos con nuestros pensamientos y emociones de forma diferente.
+              </p>
+              <ul class="therapy-card__benefits" aria-label="Beneficios">
+                <li class="therapy-benefit">Reduce la ansiedad y la rumiación mental</li>
+                <li class="therapy-benefit">Mejora la concentración y productividad</li>
+                <li class="therapy-benefit">Favorece el sueño reparador</li>
+                <li class="therapy-benefit">Aumenta la resiliencia emocional</li>
+              </ul>
+              <div style="display:flex; gap: var(--space-3); flex-wrap:wrap; margin-bottom: var(--space-5);">
+                <span class="badge badge--light">Viernes 18:15h</span>
+                <span class="badge badge--light">Máx. 8 personas</span>
+                <span class="badge badge--light">60 min</span>
+              </div>
+              <a href="horarios.html" class="btn btn--primary">Ver horario</a>
+            </div>
+          </article>
+
+          <!-- Estiramientos y Relajación -->
+          <article class="therapy-card" id="estiramientos" data-cms-id="estiramientos">
+            <img
+              src="https://placehold.co/700x460/f1f8e9/388e3c?text=Estiramientos"
+              alt="Clase de estiramientos y relajación"
+              class="therapy-card__image"
+              loading="lazy"
+              width="700" height="460"
+            />
+            <div class="therapy-card__body">
+              <p class="therapy-card__tag">Bienestar · Movimiento</p>
+              <h3 class="therapy-card__title">Estiramientos y Relajación</h3>
+              <p class="therapy-card__text">
+                Sesiones de estiramientos profundos combinados con técnicas de relajación
+                progresiva. Trabajamos la movilidad articular, la flexibilidad muscular
+                y el sistema nervioso parasimpático para un descanso profundo al final
+                de la jornada.
+              </p>
+              <ul class="therapy-card__benefits" aria-label="Beneficios">
+                <li class="therapy-benefit">Aumenta la flexibilidad y rango de movimiento</li>
+                <li class="therapy-benefit">Alivia tensiones musculares crónicas</li>
+                <li class="therapy-benefit">Activa el sistema nervioso parasimpático</li>
+                <li class="therapy-benefit">Favorece la recuperación tras el ejercicio</li>
+              </ul>
+              <div style="display:flex; gap: var(--space-3); flex-wrap:wrap; margin-bottom: var(--space-5);">
+                <span class="badge badge--light">Consultar horario</span>
+                <span class="badge badge--light">Todos los niveles</span>
+                <span class="badge badge--light">55 min</span>
+              </div>
+              <a href="contacto.html" class="btn btn--primary">Consultar</a>
+            </div>
+          </article>
+
+          <!-- Técnicas de Respiración -->
+          <article class="therapy-card" id="respiracion" data-cms-id="respiracion">
+            <img
+              src="https://placehold.co/700x460/fff3e0/e65100?text=Respiración"
+              alt="Técnicas de respiración en Cinetika"
+              class="therapy-card__image"
+              loading="lazy"
+              width="700" height="460"
+            />
+            <div class="therapy-card__body">
+              <p class="therapy-card__tag">Bienestar · Pranayama</p>
+              <h3 class="therapy-card__title">Técnicas de Respiración</h3>
+              <p class="therapy-card__text">
+                La respiración es la única función del sistema autónomo que podemos
+                controlar conscientemente. Aprende técnicas de pranayama (yoga de la
+                respiración) y otras metodologías como la respiración coherente o
+                la respiración diafragmática para regular tu sistema nervioso.
+              </p>
+              <ul class="therapy-card__benefits" aria-label="Beneficios">
+                <li class="therapy-benefit">Regula el sistema nervioso autónomo</li>
+                <li class="therapy-benefit">Reduce la respuesta al estrés (cortisol)</li>
+                <li class="therapy-benefit">Mejora la oxigenación celular</li>
+                <li class="therapy-benefit">Técnica para el día a día, siempre disponible</li>
+              </ul>
+              <div style="display:flex; gap: var(--space-3); flex-wrap:wrap; margin-bottom: var(--space-5);">
+                <span class="badge badge--light">Integrado en clases</span>
+                <span class="badge badge--light">Talleres puntuales</span>
+              </div>
+              <a href="contacto.html" class="btn btn--primary">Más información</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking CTA -->
+    <section class="cta-banner" aria-labelledby="terapias-cta-title">
+      <div class="container" style="position:relative;z-index:1;">
+        <h2 class="cta-banner__title" id="terapias-cta-title">
+          ¿No sabes por dónde empezar?
+        </h2>
+        <p class="cta-banner__subtitle">
+          Cuéntanos qué buscas y te orientamos. Podemos diseñar una combinación
+          de actividades y terapias adaptada a tus necesidades.
+        </p>
+        <div class="cta-banner__actions">
+          <a href="contacto.html" class="btn btn--white btn--lg">Escribirnos</a>
+          <a href="https://wa.me/34694419227" class="btn btn--outline-white btn--lg" target="_blank" rel="noopener noreferrer">WhatsApp →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand__logo"><div class="footer-brand__logo-mark" aria-hidden="true">Ck</div><span class="footer-brand__name">Cinetika</span></div>
+          <p class="footer-brand__tagline">Un espacio dedicado al movimiento en el barrio.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/cinetikaespacio/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://www.facebook.com/espaciocinetika" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://wa.me/34694419227" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+          </div>
+        </div>
+        <nav aria-label="Mapa del sitio"><h3 class="footer-col__title">Páginas</h3><ul class="footer-links" role="list"><li><a href="actividades.html" class="footer-link">Actividades</a></li><li><a href="horarios.html" class="footer-link">Horarios</a></li><li><a href="terapias.html" class="footer-link">Terapias</a></li><li><a href="galeria.html" class="footer-link">Galería</a></li><li><a href="videos.html" class="footer-link">Vídeos</a></li><li><a href="tablon.html" class="footer-link">Tablón</a></li><li><a href="contacto.html" class="footer-link">Contacto</a></li></ul></nav>
+        <div><h3 class="footer-col__title">Contacto</h3><div class="footer-contact-item"><span class="footer-contact-item__icon" aria-hidden="true">📍</span><span>Calle Pintor Velázquez 16,<br>Móstoles, Madrid</span></div><div class="footer-contact-item"><span class="footer-contact-item__icon" aria-hidden="true">📞</span><span><a href="tel:+34694419227">694 419 227</a></span></div><div class="footer-contact-item"><span class="footer-contact-item__icon" aria-hidden="true">✉️</span><span><a href="mailto:sara@cinetika.es">sara@cinetika.es</a></span></div><div style="margin-top:var(--space-5);"><a href="contacto.html" class="btn btn--primary btn--sm">Reservar clase</a></div></div>
+      </div>
+    </div>
+    <div class="container"><div class="footer-bottom"><p class="footer-bottom__copy">&copy; <span id="footer-year">2026</span> Cinetika. Todos los derechos reservados.</p><div class="footer-bottom__links"><a href="#" class="footer-bottom__link">Aviso legal</a><a href="#" class="footer-bottom__link">Privacidad</a><a href="#" class="footer-bottom__link">Cookies</a></div></div></div>
+  </footer>
+
+  <a href="https://wa.me/34694419227" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

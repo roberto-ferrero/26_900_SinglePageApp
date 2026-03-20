@@ -1,0 +1,85 @@
+{
+  "_comment": "Weekly schedule data for Cinetika. CMS: fetch from /api/schedule?week=current. Each slot has: time, activity, instructor, room, spots (available/total), level.",
+
+  "days": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+
+  "categories": {
+    "pilates":      { "label": "Pilates",             "color": "#d4006e", "bg": "rgba(212,0,110,0.10)",   "css": "pilates" },
+    "hipopresiva":  { "label": "Hipopresiva",         "color": "#00695c", "bg": "rgba(0,150,120,0.10)",   "css": "hipopresiva" },
+    "yoga":         { "label": "Yoga Kundalini",      "color": "#5a00b8", "bg": "rgba(100,0,200,0.08)",   "css": "yoga" },
+    "bienestar":    { "label": "Bienestar & Terapias","color": "#c06a00", "bg": "rgba(200,100,0,0.10)",   "css": "bienestar" }
+  },
+
+  "slots": [
+    {
+      "time": "09:00",
+      "lunes":      { "activity": "Pilates Suelo",      "category": "pilates",     "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 2, "total": 6 } },
+      "martes":     { "activity": "Pilates Máquinas",   "category": "pilates",     "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Máquinas",  "spots": { "available": 1, "total": 4 } },
+      "miercoles":  null,
+      "jueves":     { "activity": "Pilates Máquinas",   "category": "pilates",     "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Máquinas",  "spots": { "available": 3, "total": 4 } },
+      "viernes":    { "activity": "Pilates Suelo",      "category": "pilates",     "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 4, "total": 6 } },
+      "sabado":     null
+    },
+    {
+      "time": "10:15",
+      "lunes":      { "activity": "Hipopresivos",        "category": "hipopresiva", "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 3, "total": 6 } },
+      "martes":     { "activity": "Pilates Suelo",       "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Iniciación", "room": "Sala Principal", "spots": { "available": 5, "total": 6 } },
+      "miercoles":  { "activity": "Pilates Máquinas",    "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Avanzado", "room": "Sala Máquinas",  "spots": { "available": 0, "total": 4 } },
+      "jueves":     { "activity": "Hipopresivos",        "category": "hipopresiva", "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 2, "total": 6 } },
+      "viernes":    { "activity": "Pilates Máquinas",    "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Máquinas",  "spots": { "available": 2, "total": 4 } },
+      "sabado":     { "activity": "Pilates Suelo",       "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 3, "total": 6 } }
+    },
+    {
+      "time": "11:30",
+      "lunes":      null,
+      "martes":     { "activity": "Hipopresivos",        "category": "hipopresiva", "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 4, "total": 6 } },
+      "miercoles":  { "activity": "Pilates Suelo",       "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 2, "total": 6 } },
+      "jueves":     null,
+      "viernes":    { "activity": "Hipopresivos",        "category": "hipopresiva", "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 1, "total": 6 } },
+      "sabado":     { "activity": "Taller / Especial",   "category": "bienestar",  "instructor": "Equipo", "duration": 90, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 8, "total": 12 } }
+    },
+    {
+      "time": "17:00",
+      "lunes":      { "activity": "Pilates Suelo",       "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Iniciación", "room": "Sala Principal", "spots": { "available": 3, "total": 6 } },
+      "martes":     { "activity": "Pilates Máquinas",    "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Máquinas",  "spots": { "available": 1, "total": 4 } },
+      "miercoles":  { "activity": "Hipopresivos",        "category": "hipopresiva", "instructor": "Sara",   "duration": 55, "level": "Avanzado","room": "Sala Principal", "spots": { "available": 2, "total": 6 } },
+      "jueves":     { "activity": "Pilates Suelo",       "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 4, "total": 6 } },
+      "viernes":    null,
+      "sabado":     null
+    },
+    {
+      "time": "18:15",
+      "lunes":      { "activity": "Pilates Máquinas",    "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Máquinas",  "spots": { "available": 2, "total": 4 } },
+      "martes":     { "activity": "Yoga Kundalini",      "category": "yoga",       "instructor": "Profe Yoga", "duration": 75, "level": "Todos", "room": "Sala Principal", "spots": { "available": 5, "total": 8 } },
+      "miercoles":  { "activity": "Pilates Suelo",       "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 0, "total": 6 } },
+      "jueves":     { "activity": "Pilates Máquinas",    "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Máquinas",  "spots": { "available": 3, "total": 4 } },
+      "viernes":    { "activity": "Mindfulness",         "category": "bienestar",  "instructor": "Equipo", "duration": 60, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 6, "total": 8 } },
+      "sabado":     null
+    },
+    {
+      "time": "19:30",
+      "lunes":      { "activity": "Yoga Kundalini",      "category": "yoga",       "instructor": "Profe Yoga", "duration": 75, "level": "Todos", "room": "Sala Principal", "spots": { "available": 3, "total": 8 } },
+      "martes":     { "activity": "Pilates Suelo",       "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 2, "total": 6 } },
+      "miercoles":  { "activity": "Yoga Kundalini",      "category": "yoga",       "instructor": "Profe Yoga", "duration": 75, "level": "Todos", "room": "Sala Principal", "spots": { "available": 4, "total": 8 } },
+      "jueves":     { "activity": "Hipopresivos",        "category": "hipopresiva", "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 3, "total": 6 } },
+      "viernes":    { "activity": "Pilates Suelo",       "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 1, "total": 6 } },
+      "sabado":     null
+    },
+    {
+      "time": "20:45",
+      "lunes":      { "activity": "Pilates Suelo",       "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Principal", "spots": { "available": 4, "total": 6 } },
+      "martes":     null,
+      "miercoles":  { "activity": "Pilates Máquinas",    "category": "pilates",    "instructor": "Sara",   "duration": 55, "level": "Todos",   "room": "Sala Máquinas",  "spots": { "available": 2, "total": 4 } },
+      "jueves":     { "activity": "Yoga Kundalini",      "category": "yoga",       "instructor": "Profe Yoga", "duration": 75, "level": "Todos", "room": "Sala Principal", "spots": { "available": 6, "total": 8 } },
+      "viernes":    null,
+      "sabado":     null
+    }
+  ],
+
+  "notes": [
+    "Los horarios pueden variar. Consulta siempre el tablón de anuncios.",
+    "Para Pilates Máquinas es obligatoria la sesión de iniciación previa.",
+    "Clases de prueba disponibles para actividades de suelo.",
+    "Contacta por WhatsApp para reservar tu plaza: +34 694 419 227"
+  ]
+}

@@ -1,13 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ─────────────────────────────────────────────
+   Design tokens
+───────────────────────────────────────────── */
 :root {
-    --color-bg:       #f4f4f4;
-    --color-bg-alt:   #eaeaea;
-    --color-text:     #111111;
-    --color-text-muted: #555555;
-    --color-accent:   #e63946;
-    --font-primary:   'Georgia', serif;
+  /* Colors */
+  --color-primary:       #d4006e;
+  --color-primary-dark:  #a8005a;
+  --color-primary-light: #ff4da6;
+  --color-bg:            #ffffff;
+  --color-bg-alt:        #f7f7f7;
+  --color-bg-dark:       #111111;
+  --color-text:          #1a1a1a;
+  --color-text-muted:    #666666;
+  --color-text-inverse:  #ffffff;
+  --color-border:        #e5e5e5;
+  --color-shadow:        rgba(0, 0, 0, 0.08);
+
+  /* Typography */
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Fluid font sizes */
+  --text-xs:   clamp(0.7rem,  1vw,    0.75rem);
+  --text-sm:   clamp(0.8rem,  1.2vw,  0.875rem);
+  --text-base: clamp(0.9rem,  1.4vw,  1rem);
+  --text-md:   clamp(1rem,    1.6vw,  1.125rem);
+  --text-lg:   clamp(1.1rem,  2vw,    1.25rem);
+  --text-xl:   clamp(1.25rem, 2.5vw,  1.5rem);
+  --text-2xl:  clamp(1.5rem,  3vw,    2rem);
+  --text-3xl:  clamp(2rem,    4vw,    2.75rem);
+  --text-4xl:  clamp(2.5rem,  5vw,    3.5rem);
+  --text-hero: clamp(2.8rem,  7vw,    5rem);
+
+  /* Spacing */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Layout */
+  --container-max: 1200px;
+  --nav-height:    70px;
+
+  /* Borders */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md:   0 4px 12px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.06);
+  --shadow-lg:   0 10px 30px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06);
+  --shadow-pink: 0 8px 30px rgba(212,0,110,0.25);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
 }
 
+/* ─────────────────────────────────────────────
+   Base
+───────────────────────────────────────────── */
 body {
-    background-color: var(--color-bg);
-    font-family: var(--font-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-text);
+}
+
+/* ─────────────────────────────────────────────
+   Layout utilities
+───────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+}
+
+/* ─────────────────────────────────────────────
+   Buttons
+───────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition:
+    background     var(--transition-base),
+    color          var(--transition-base),
+    border-color   var(--transition-base),
+    box-shadow     var(--transition-base);
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+.btn--primary:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  box-shadow: var(--shadow-pink);
+}
+
+.btn--outline-white {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.btn--outline-white:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+}
+
+.btn--lg {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--text-md);
+}
+
+/* ─────────────────────────────────────────────
+   Animations
+───────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.55s ease forwards;
 }

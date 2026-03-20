@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tablón de anuncios de Cinetika. Novedades, cambios de horario, nuevas actividades y eventos en nuestro estudio de Móstoles." />
+  <title>Tablón de Anuncios — Cinetika</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <a href="../index.html" class="nav-brand" aria-label="Cinetika — Inicio">
+        <div class="nav-brand__logo" aria-hidden="true">Ck</div>
+        <span class="nav-brand__name">Cine<span>tika</span></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li class="nav-links__item"><a href="../index.html" class="nav-links__link">Inicio</a></li>
+          <li class="nav-links__item"><a href="actividades.html" class="nav-links__link">Actividades</a></li>
+          <li class="nav-links__item"><a href="horarios.html" class="nav-links__link">Horarios</a></li>
+          <li class="nav-links__item"><a href="terapias.html" class="nav-links__link">Terapias</a></li>
+          <li class="nav-links__item"><a href="galeria.html" class="nav-links__link">Galería</a></li>
+          <li class="nav-links__item"><a href="videos.html" class="nav-links__link">Vídeos</a></li>
+          <li class="nav-links__item"><a href="tablon.html" class="nav-links__link active" aria-current="page">Tablón</a></li>
+          <li class="nav-links__item nav-cta"><a href="contacto.html" class="btn btn--primary btn--sm">Contactar</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="../index.html">Inicio</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span aria-current="page">Tablón</span>
+        </nav>
+        <span class="page-header__label">Novedades y avisos</span>
+        <h1 class="page-header__title">Tablón de anuncios</h1>
+        <p class="page-header__subtitle">
+          Aquí encontrarás toda la información sobre cambios de horario,
+          nuevas actividades, eventos especiales y noticias del estudio.
+        </p>
+      </div>
+    </div>
+
+    <!-- ==================================================================
+         NOTICE BOARD
+         CMS: fetch announcements from /api/announcements?limit=20
+         Each notice has data-cms-id for CMS binding
+         ================================================================== -->
+    <section class="section" aria-labelledby="notices-title">
+      <div class="container">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:var(--space-4); margin-bottom: var(--space-10);">
+          <div>
+            <span class="section-label">Actualizado</span>
+            <h2 class="section-title" id="notices-title">Últimos anuncios</h2>
+          </div>
+          <!-- Subscribe to announcements via WhatsApp -->
+          <a href="https://wa.me/34694419227?text=Hola%2C%20quiero%20recibir%20novedades%20de%20Cinetika" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+            Recibir avisos por WhatsApp
+          </a>
+        </div>
+
+        <!-- Pinned / urgent notices -->
+        <div style="margin-bottom: var(--space-10);">
+          <h3 style="font-size: var(--text-sm); font-weight: 700; letter-spacing: 0.1em; text-transform:uppercase; color: var(--color-text-muted); margin-bottom: var(--space-5);">
+            Destacados
+          </h3>
+
+          <div class="notice-list" data-cms="announcements.pinned">
+
+            <!-- CMS: data-cms-id="ann-1" -->
+            <article class="notice notice--success" data-cms-id="ann-1" aria-label="Anuncio: Nueva clase de Pilates">
+              <div class="notice__date" aria-label="Fecha: 10 de marzo">
+                <span class="notice__day">10</span>
+                <span class="notice__month">Mar</span>
+              </div>
+              <div class="notice__body">
+                <span class="notice__badge">Nuevo</span>
+                <h3 class="notice__title">Nueva clase de Pilates Máquinas — Martes y Jueves mañana</h3>
+                <p class="notice__text">
+                  Abrimos un nuevo turno de Pilates en Reformer para los martes y jueves a las 9:00h.
+                  Plazas muy limitadas — grupos de máximo 4 personas.
+                </p>
+                <div style="margin-top: var(--space-4);">
+                  <a href="contacto.html" class="btn btn--primary btn--sm">Reservar plaza</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="notice notice--info" data-cms-id="ann-2" aria-label="Anuncio: Taller de Risoterapia">
+              <div class="notice__date" aria-label="Fecha: 5 de marzo">
+                <span class="notice__day">05</span>
+                <span class="notice__month">Mar</span>
+              </div>
+              <div class="notice__body">
+                <span class="notice__badge">Próximo evento</span>
+                <h3 class="notice__title">Taller de Risoterapia — Sábado 28 de marzo</h3>
+                <p class="notice__text">
+                  Sesión especial de Risoterapia este sábado a las 11:00h.
+                  Abierto a tod@s, no hace falta experiencia previa.
+                  Precio especial taller: 15€.
+                </p>
+                <div style="margin-top: var(--space-4);">
+                  <a href="contacto.html" class="btn btn--outline btn--sm">Más info y reserva</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- All notices -->
+        <div>
+          <h3 style="font-size: var(--text-sm); font-weight: 700; letter-spacing: 0.1em; text-transform:uppercase; color: var(--color-text-muted); margin-bottom: var(--space-5);">
+            Todos los anuncios
+          </h3>
+
+          <div class="notice-list" data-cms="announcements.all">
+
+            <article class="notice notice--urgent" data-cms-id="ann-3" aria-label="Anuncio: Horarios Semana Santa">
+              <div class="notice__date" aria-label="Fecha: 28 de febrero">
+                <span class="notice__day">28</span>
+                <span class="notice__month">Feb</span>
+              </div>
+              <div class="notice__body">
+                <span class="notice__badge" style="background: rgba(229,62,62,0.12); color: #c53030;">Aviso importante</span>
+                <h3 class="notice__title">Horarios de Semana Santa</h3>
+                <p class="notice__text">
+                  Durante Semana Santa (4–12 de abril) habrá modificaciones en los horarios.
+                  Consultad el tablón actualizado o escribidnos por WhatsApp.
+                </p>
+              </div>
+            </article>
+
+            <article class="notice" data-cms-id="ann-4" aria-label="Anuncio: Yoga Kundalini tarde">
+              <div class="notice__date" aria-label="Fecha: 20 de febrero">
+                <span class="notice__day">20</span>
+                <span class="notice__month">Feb</span>
+              </div>
+              <div class="notice__body">
+                <span class="notice__badge">Próximamente</span>
+                <h3 class="notice__title">Incorporación de Yoga Kundalini en horario de tarde</h3>
+                <p class="notice__text">
+                  A partir de abril añadimos una sesión de Kundalini Yoga los miércoles a las 19:30h.
+                  Una práctica completa de cuerpo, mente y espíritu.
+                </p>
+                <div style="margin-top: var(--space-4);">
+                  <a href="horarios.html" class="btn btn--outline btn--sm">Ver horarios</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="notice" data-cms-id="ann-5" aria-label="Anuncio: Cierre festivos">
+              <div class="notice__date" aria-label="Fecha: 10 de febrero">
+                <span class="notice__day">10</span>
+                <span class="notice__month">Feb</span>
+              </div>
+              <div class="notice__body">
+                <span class="notice__badge" style="background: rgba(0,0,0,0.06); color: var(--color-text-muted);">Info</span>
+                <h3 class="notice__title">Cierre por festivos locales de Móstoles</h3>
+                <p class="notice__text">
+                  El estudio permanecerá cerrado los días 26 y 27 de febrero por festivos locales de Móstoles.
+                  Retomaremos la actividad normal el 3 de marzo.
+                </p>
+              </div>
+            </article>
+
+            <article class="notice notice--success" data-cms-id="ann-6" aria-label="Anuncio: Nuevo grupo de hipopresivos">
+              <div class="notice__date" aria-label="Fecha: 2 de febrero">
+                <span class="notice__day">02</span>
+                <span class="notice__month">Feb</span>
+              </div>
+              <div class="notice__body">
+                <span class="notice__badge">Novedad</span>
+                <h3 class="notice__title">Nuevo grupo de Hipopresivos — Nivel Avanzado</h3>
+                <p class="notice__text">
+                  Para las alumnas que ya tienen experiencia, abrimos un grupo de nivel avanzado
+                  los miércoles a las 17:00h. Cupo máximo de 5 personas.
+                </p>
+                <div style="margin-top: var(--space-4);">
+                  <a href="contacto.html" class="btn btn--primary btn--sm">Apuntarme</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="notice" data-cms-id="ann-7" aria-label="Anuncio: Taller de relajación enero">
+              <div class="notice__date" aria-label="Fecha: 15 de enero">
+                <span class="notice__day">15</span>
+                <span class="notice__month">Ene</span>
+              </div>
+              <div class="notice__body">
+                <span class="notice__badge">Pasado</span>
+                <h3 class="notice__title">Taller de Relajación Profunda — enero</h3>
+                <p class="notice__text">
+                  El taller del 25 de enero fue todo un éxito. Gracias a todas las participantes.
+                  Repetiremos pronto — ¡estad atentas al tablón!
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         UPCOMING EVENTS CALENDAR PREVIEW
+         ================================================================== -->
+    <section class="section section--alt" aria-labelledby="events-title">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-label">Agenda</span>
+          <h2 class="section-title" id="events-title">Próximos eventos</h2>
+        </div>
+
+        <!-- CMS: fetch from /api/events?upcoming=true -->
+        <div class="grid grid--3 stagger" data-cms="events">
+
+          <div class="card animate-fade-in-up">
+            <div class="card__body">
+              <div style="font-size: var(--text-3xl); font-weight: 900; color: var(--color-primary); line-height:1; margin-bottom: var(--space-2);">28</div>
+              <div style="font-size: var(--text-xs); font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--color-text-muted); margin-bottom: var(--space-4);">Marzo 2026 · 11:00h</div>
+              <span class="card__tag">Bienestar</span>
+              <h3 class="card__title">Taller de Risoterapia</h3>
+              <p class="card__text">Sesión especial de risa consciente. Abierto a todo el mundo, sin experiencia previa.</p>
+              <div class="card__footer">
+                <span class="badge badge--pink">15 €</span>
+                <a href="contacto.html" class="btn btn--primary btn--sm">Reservar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card animate-fade-in-up">
+            <div class="card__body">
+              <div style="font-size: var(--text-3xl); font-weight: 900; color: var(--color-primary); line-height:1; margin-bottom: var(--space-2);">05</div>
+              <div style="font-size: var(--text-xs); font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--color-text-muted); margin-bottom: var(--space-4);">Abril 2026 · 10:30h</div>
+              <span class="card__tag">Yoga</span>
+              <h3 class="card__title">Taller Intensivo de Kundalini</h3>
+              <p class="card__text">Mañana de yoga profundo. Kriya completa, pranayama y meditación. 2,5 horas de práctica.</p>
+              <div class="card__footer">
+                <span class="badge badge--pink">25 €</span>
+                <a href="contacto.html" class="btn btn--primary btn--sm">Reservar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card animate-fade-in-up">
+            <div class="card__body">
+              <div style="font-size: var(--text-3xl); font-weight: 900; color: var(--color-primary); line-height:1; margin-bottom: var(--space-2);">19</div>
+              <div style="font-size: var(--text-xs); font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--color-text-muted); margin-bottom: var(--space-4);">Abril 2026 · 09:30h</div>
+              <span class="card__tag">Pilates</span>
+              <h3 class="card__title">Open Day — Jornada de puertas abiertas</h3>
+              <p class="card__text">Ven a conocer el estudio, prueba una clase gratuita y resuelve todas tus dudas.</p>
+              <div class="card__footer">
+                <span class="badge badge--light">Gratuito</span>
+                <a href="contacto.html" class="btn btn--outline btn--sm">Apuntarme</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter / WhatsApp CTA -->
+    <section class="cta-banner" aria-labelledby="newsletter-title">
+      <div class="container" style="position:relative;z-index:1;">
+        <h2 class="cta-banner__title" id="newsletter-title">Mantente informada</h2>
+        <p class="cta-banner__subtitle">
+          Escríbenos por WhatsApp y te añadimos a nuestra lista de avisos.
+          Serás la primera en enterarte de nuevas clases y talleres.
+        </p>
+        <div class="cta-banner__actions">
+          <a href="https://wa.me/34694419227?text=Hola%2C%20quiero%20recibir%20novedades%20de%20Cinetika" class="btn btn--white btn--lg" target="_blank" rel="noopener noreferrer">
+            Unirme a la lista de avisos →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand__logo"><div class="footer-brand__logo-mark" aria-hidden="true">Ck</div><span class="footer-brand__name">Cinetika</span></div>
+          <p class="footer-brand__tagline">Un espacio dedicado al movimiento en el barrio.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/cinetikaespacio/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://www.facebook.com/espaciocinetika" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://wa.me/34694419227" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+          </div>
+        </div>
+        <nav aria-label="Mapa del sitio"><h3 class="footer-col__title">Páginas</h3><ul class="footer-links" role="list"><li><a href="actividades.html" class="footer-link">Actividades</a></li><li><a href="horarios.html" class="footer-link">Horarios</a></li><li><a href="terapias.html" class="footer-link">Terapias</a></li><li><a href="galeria.html" class="footer-link">Galería</a></li><li><a href="videos.html" class="footer-link">Vídeos</a></li><li><a href="tablon.html" class="footer-link">Tablón</a></li><li><a href="contacto.html" class="footer-link">Contacto</a></li></ul></nav>
+        <div><h3 class="footer-col__title">Contacto</h3><div class="footer-contact-item"><span class="footer-contact-item__icon" aria-hidden="true">📍</span><span>Calle Pintor Velázquez 16,<br>Móstoles, Madrid</span></div><div class="footer-contact-item"><span class="footer-contact-item__icon" aria-hidden="true">📞</span><span><a href="tel:+34694419227">694 419 227</a></span></div><div class="footer-contact-item"><span class="footer-contact-item__icon" aria-hidden="true">✉️</span><span><a href="mailto:sara@cinetika.es">sara@cinetika.es</a></span></div><div style="margin-top:var(--space-5);"><a href="contacto.html" class="btn btn--primary btn--sm">Reservar clase</a></div></div>
+      </div>
+    </div>
+    <div class="container"><div class="footer-bottom"><p class="footer-bottom__copy">&copy; <span id="footer-year">2026</span> Cinetika. Todos los derechos reservados.</p><div class="footer-bottom__links"><a href="#" class="footer-bottom__link">Aviso legal</a><a href="#" class="footer-bottom__link">Privacidad</a><a href="#" class="footer-bottom__link">Cookies</a></div></div></div>
+  </footer>
+
+  <a href="https://wa.me/34694419227" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
